@@ -1,0 +1,106 @@
+<head>
+    <title>
+        OZZY JS
+    </title>
+    <link rel="stylesheet" href="trialCSS.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    <h1>THIS IS JQUERY UI</h1>
+    <!-- <script type="text/javascript">
+        let greet = "Welcome to JS";
+        document.write("<h1>"+greet+"</h1>");
+        function sizeChange()
+        {
+            document.getElementById("ss").width="300";
+        }
+        function orgSize()
+        {
+            document.getElementById("ss").width="200";
+        }
+        // function fn1()
+        // {
+        //     let str = document.getElementById("inputU").value;
+        //     let str2 = document.getElementById("inputP").value;
+        //     if(str==str2)
+        //         alert("Match");
+        //     else
+        //         alert("No match");    
+        // }
+        // function fn2()
+        // {
+        //     let rd1 = document.getElementById("rd1");
+        //     let rd2 = document.getElementById("rd2");
+
+        //     if(rd1.checked==true)
+        //         alert("You selected :"+rd1.value);
+        //     else if(rd2.checked==true) 
+        //         alert("You selected :"+rd2.value);    
+        //     else
+        //         alert("Nothing slected");    
+        // }
+    </script> -->
+</head>
+<body>
+    <!-- <img id="ss" onmouseleave="orgSize()" onmouseover="sizeChange()" src="imgs/img4.jpg" width="200"/>  -->
+    <!-- <input id="inputU" placeholder="Username" type="text">
+    <br>
+    <br>
+    <input id="inputP" placeholder="password" type="password">
+    <br>
+    <br>
+    <button onclick="fn1()" id="button">Click me</button>
+    <h1>
+        Hello OZZY
+    </h1> -->
+    <!-- <input id="rd1" name="grp1" type="radio" value="Male">MALE </input>
+    <input id="rd2" name="grp1" type="radio" value="Female">FEMALE </input>
+    <br>
+    <br>
+    <button onclick="fn2()" id="button">Click me</button> -->
+    <div class="container">
+     <h2>Hello Peeps</h2>   
+
+    <button id="btn1">CLICK</button>
+    <h3>Me Ready</h3>
+    <br>
+    <br>
+    <img id="ss" src="img4.jpg" width="200" title="They call me calender"/> 
+    <br><br>
+    <input type="text" placeholder="Enter Date">
+    </div>
+    <script src="JQ/jquery.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script type="text/javascript">
+
+        $("document").ready(function(){
+
+            $("#btn1").click(fade);
+        function fade()
+        {
+            $("img").slideToggle(1000);
+            
+            
+        }
+        $("input").datepicker({
+            numberOfMonths: 1,
+            showOtherMonths:true,
+           
+
+        });
+        $("img").tooltip({
+            content:"ozzy??",
+            track:true,
+        //    show:{effect:fade,duration:3000},
+        //    hide:{effect:fade,time:5000}
+        });
+        $("div").accordian();
+
+
+
+
+        })
+        
+
+    </script>
+</body>

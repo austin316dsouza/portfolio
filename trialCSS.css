@@ -1,0 +1,26 @@
+h1{
+    color: rgb(4, 0, 255);
+    
+}
+img{
+    margin-left: 50px;
+    border: 5px solid red;
+    padding: 0px;
+    animation: horse 2s infinite;
+}
+@keyframes horse{
+    from{transform: scale(-2);}
+    to{transform: scale(0);}
+}
+input{
+    background-color: crimson;
+    padding: 5px;
+    border: 3px solid cyan;
+}
+.container{
+    
+    margin-left: 40%;
+    border: 1px solid red;
+    width: 300px;
+    background-color: cornflowerblue;
+}
