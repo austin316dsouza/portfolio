@@ -1,0 +1,102 @@
+html{
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    padding:0;
+}
+body{
+    padding:5rem 0; 
+}
+.container{
+    max-width: 1200px;
+    width:80%;
+    margin:0 auto;
+}
+.row{
+    height:35rem;
+    background-color: rgb(18, 16, 180);
+    
+}
+body{
+    background-image: url(nav-bg.jpg);
+    background-size: cover;
+    background-position:center ;
+}
+.row img{
+   display: inline-block;
+   width:70%;
+   height: 100%;
+   object-fit: cover;
+}
+.box1{
+    width:50%;
+    height: 550px;
+    float:left
+    
+}
+.box2{
+    width:50%;
+    float:right;
+
+}
+.row h1{
+    display: inline-block;
+}
+.row::after{
+    content:'';
+    display: block;
+    clear:both;
+}
+.head-text{
+    size:3rem;
+    text-transform: uppercase;
+    color:gold;
+    font-weight:900;
+    
+}
+.sub-text{
+    size:2 rem;
+    color:mintcream;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    letter-spacing: .1rem;
+}
+.btn{
+    position:absolute;
+    display: inline-block;
+    margin-right:.5em;
+    border: 0.2em dashed black;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20em;
+    padding: .6em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:orangered;
+    font-weight:900;
+}
+.btn:hover{
+    background-color: orangered;
+    color:white;
+    
+    transition:.2s ease-in-out;
+}
+/* ##############################CONTACT#################################### */
+.btmrow{
+    text-align: center;
+    height:100px;
+    background-color: rgba(4, 4, 148, 0.658);
+    margin-top: 3em;
+    padding:1em;
+}
+#mail{
+    color: gold;
+}
+#mail:hover{
+    text-decoration: none;
+    font-weight: 900;
+    color:hotpink;
+}
+h4{
+    display: inline-block;
+}
