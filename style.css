@@ -1,0 +1,102 @@
+
+body{
+    margin-left: 1.3rem;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+   
+}
+.container{
+    max-width:1200px;
+    width:80%;
+    margin:0 auto;
+}
+.head-text{
+    size:3rem;
+    text-transform: uppercase;
+    color:gold;
+    font-weight:900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sub-text{
+    size:2 rem;
+    color:mintcream;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .1rem;
+    
+}
+nav{
+    background-color: rgba(64, 224, 208, 0.664);
+    
+    backdrop-filter:blur(1px);
+    /* backdrop-filter: opacity(10%); */
+    position: relative;
+    
+}
+nav ul{
+    display: inline-block;
+    left: 4em;
+    top:1em;
+    position: absolute;
+}
+
+nav ul li{
+    display: inline-block;
+    margin:.5em;
+    border: 0.05em solid blue;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20em;
+    padding: .4em;
+   
+    text-transform: uppercase;
+    
+}
+nav ul li:hover{
+    background-color: black;
+    transform:scale(1.3);
+    transition: .2s ease-in-out;
+}
+nav ul li a:hover{
+    color:red;
+}
+a{
+    text-decoration: none;
+    color:darkblue;
+    font-size: larger;
+
+}
+nav img{
+    display: inline-block;
+    margin: 10px 10px;
+    border: 2px solid black;
+    animation: rot .1s .5s infinite linear;
+}
+@keyframes rot{
+    to{transform: rotate(360deg);}
+}
+#first{
+    margin-left: 100px;
+}
+#head1,#p1{
+    width:40%;
+    margin:.5em auto;
+}
+section p img:hover{
+    
+    animation: mov 4s infinite linear;
+    cursor: pointer;
+}
+@keyframes mov{
+    /* from{
+        transform: translateX(0vh);
+    }
+    to{
+        transform:translateX(100vh);
+    } */
+    
+    to{
+        
+        transform: rotateY(360deg);
+    }
+}
